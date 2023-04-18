@@ -1,0 +1,1 @@
+# RHODS-krkn-config
