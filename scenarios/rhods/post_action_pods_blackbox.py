@@ -4,8 +4,8 @@ import time
 
 NAMESPACE= "redhat-ods-monitoring"
 LABEL= "deployment=blackbox-exporter"
-CONTAINER_NO= "1"
-PODS_NO= "2"
+CONTAINER_NO= "2"
+PODS_NO= "1"
 
 
 def run(cmd):

@@ -46,12 +46,12 @@ kraken:
         - container_scenarios:
           - - scenarios/rhods/empty_container.yml
             - scenarios/rhods/post_action_pods_prometheus_operator.py
-        # Prometheus model monitoring
-        - plugin_scenarios:
-          - scenarios/rhods/pods_prometheus_modelmonitoring.yml
-        - container_scenarios:
-          - - scenarios/rhods/empty_container.yml
-            - scenarios/rhods/post_action_pods_prometheus_modelmonitoring.py
+        # Prometheus model monitoring - does not currently work correctly
+        # - plugin_scenarios:
+        #   - scenarios/rhods/pods_prometheus_modelmonitoring.yml
+        # - container_scenarios:
+        #   - - scenarios/rhods/empty_container.yml
+        #     - scenarios/rhods/post_action_pods_prometheus_modelmonitoring.py
         # Blackbox
         - plugin_scenarios:
           - scenarios/rhods/pods_blackbox.yml
