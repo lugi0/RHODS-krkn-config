@@ -1,0 +1,23 @@
+#yaml-language-server: $schema=../plugin.schema.json
+- id: kill-pods
+  config:
+    namespace_pattern: ^redhat-ods-monitoring$
+    label_selector: app.kubernetes.io/instance=rhods-model-monitoring
+    kill: 1
+    timeout: 60
+- id: wait-for-pods
+  config:
+    namespace_pattern: ^redhat-ods-monitoring$
+    label_selector: app.kubernetes.io/instance=rhods-model-monitoring
+    count: 3
+- id: kill-pods
+  config:
+    namespace_pattern: ^redhat-ods-monitoring$
+    label_selector: app.kubernetes.io/instance=rhods-model-monitoring
+    kill: 3
+    timeout: 60
+- id: wait-for-pods
+  config:
+    namespace_pattern: ^redhat-ods-monitoring$
+    label_selector: app.kubernetes.io/instance=rhods-model-monitoring
+    count: 3

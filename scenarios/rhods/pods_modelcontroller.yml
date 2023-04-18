@@ -1,0 +1,21 @@
+#yaml-language-server: $schema=../plugin.schema.json
+- id: kill-pods
+  config:
+    namespace_pattern: ^redhat-ods-applications$
+    label_selector: app=odh-model-controller
+    kill: 1
+- id: wait-for-pods
+  config:
+    namespace_pattern: ^redhat-ods-applications$
+    label_selector: app=odh-model-controller
+    count: 3
+- id: kill-pods
+  config:
+    namespace_pattern: ^redhat-ods-applications$
+    label_selector: app=odh-model-controller
+    kill: 3
+- id: wait-for-pods
+  config:
+    namespace_pattern: ^redhat-ods-applications$
+    label_selector: app=odh-model-controller
+    count: 3

@@ -1,0 +1,21 @@
+#yaml-language-server: $schema=../plugin.schema.json
+- id: kill-pods
+  config:
+    namespace_pattern: ^redhat-ods-applications$
+    label_selector: app=rhods-dashboard
+    kill: 1
+- id: wait-for-pods
+  config:
+    namespace_pattern: ^redhat-ods-applications$
+    label_selector: app=rhods-dashboard
+    count: 5
+- id: kill-pods
+  config:
+    namespace_pattern: ^redhat-ods-applications$
+    label_selector: app=rhods-dashboard
+    kill: 5
+- id: wait-for-pods
+  config:
+    namespace_pattern: ^redhat-ods-applications$
+    label_selector: app=rhods-dashboard
+    count: 5

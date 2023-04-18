@@ -1,0 +1,6 @@
+scenarios:
+- name: "NOP scenario"
+  namespace: "no-existing-namespace"
+  label_selector: "no-existing-label"
+  count: 0
+  retry_wait: 1

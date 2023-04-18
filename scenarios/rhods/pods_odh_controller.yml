@@ -1,0 +1,21 @@
+#yaml-language-server: $schema=../plugin.schema.json
+- id: kill-pods
+  config:
+    namespace_pattern: ^redhat-ods-applications$
+    label_selector: app.kubernetes.io/part-of=odh-notebook-controller
+    kill: 1
+- id: wait-for-pods
+  config:
+    namespace_pattern: ^redhat-ods-applications$
+    label_selector: app.kubernetes.io/part-of=odh-notebook-controller
+    count: 2
+- id: kill-pods
+  config:
+    namespace_pattern: ^redhat-ods-applications$
+    label_selector: app.kubernetes.io/part-of=odh-notebook-controller
+    kill: 2
+- id: wait-for-pods
+  config:
+    namespace_pattern: ^redhat-ods-applications$
+    label_selector: app.kubernetes.io/part-of=odh-notebook-controller
+    count: 2
