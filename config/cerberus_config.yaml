@@ -1,3 +1,6 @@
+######################################################################################################################
+#     This has to be placed in cerberus/config/config.yaml, and cerberus has to be run before the krkn run starts    #
+######################################################################################################################
 cerberus:
     distribution: openshift                              # Distribution can be kubernetes or openshift
     kubeconfig_path: ~/.kube/config                      # Path to kubeconfig
